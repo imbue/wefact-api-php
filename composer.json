@@ -1,0 +1,43 @@
+{
+  "name": "dokter/wefact-api-php",
+  "description": "WeFact API client library for PHP.",
+  "keywords": [
+    "wefact",
+    "php",
+    "sdk",
+    "api",
+    "invoicing"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/patrickdokter/wefact-api-php",
+  "authors": [
+    {
+      "name": "Patrick Dokter",
+      "email": "patrick@dokter.dev"
+    }
+  ],
+  "require": {
+    "php": "^7.2",
+    "guzzlehttp/guzzle": "^6.3",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.7 || ^6.5 || ^7.1"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "Dokter\\WeFact\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "./vendor/bin/phpunit tests"
+  }
+}
