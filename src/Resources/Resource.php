@@ -2,10 +2,10 @@
 
 namespace Dokter\WeFact\Resources;
 
+use Dokter\WeFact\Exceptions\ApiException;
 use Dokter\WeFact\Exceptions\MissingApiKeyException;
 use Dokter\WeFact\WeFact;
 use GuzzleHttp\Exception\GuzzleException;
-use Psr\Http\Message\ResponseInterface;
 
 abstract class Resource
 {
@@ -14,7 +14,6 @@ abstract class Resource
     public const ACTION_CREATE = 'add';
     public const ACTION_EDIT = 'edit';
     public const ACTION_DELETE = 'delete';
-
 
     /**
      * @var WeFact $client
@@ -31,10 +30,47 @@ abstract class Resource
     }
 
     /**
-     * @param array $data
-     * @return ResponseInterface
-     * @throws MissingApiKeyException
+     * @param array $parameters
+     * @return mixed
+     * @throws ApiException
      * @throws GuzzleException
+     * @throws MissingApiKeyException
+     */
+    public function list(array $parameters = [])
+    {
+        $controller = $this->getResourceName();
+
+        return $this->client->doHttpCall(
+            $controller,
+            self::ACTION_LIST,
+            $parameters
+        );
+    }
+
+    /**
+     * @param array $parameters
+     * @return mixed
+     * @throws ApiException
+     * @throws GuzzleException
+     * @throws MissingApiKeyException
+     */
+    public function show(array $parameters = [])
+    {
+        $controller = $this->getResourceName();
+
+        return $this->client->doHttpCall(
+            $controller,
+            self::ACTION_SHOW,
+            $parameters
+        );
+    }
+
+    /**
+     * @param array $data
+     * @return mixed
+     * @throws GuzzleException
+     * @throws MissingApiKeyException
+     * @throws ApiException
      */
     public function create(array $data)
     {
@@ -44,6 +80,42 @@ abstract class Resource
             $controller,
             self::ACTION_CREATE,
             $data
+        );
+    }
+
+    /**
+     * @param array $data
+     * @return mixed
+     * @throws GuzzleException
+     * @throws MissingApiKeyException
+     * @throws ApiException
+     */
+    public function edit(array $data)
+    {
+        $controller = $this->getResourceName();
+
+        return $this->client->doHttpCall(
+            $controller,
+            self::ACTION_EDIT,
+            $data
+        );
+    }
+
+    /**
+     * @param array $parameters
+     * @return mixed
+     * @throws ApiException
+     * @throws GuzzleException
+     * @throws MissingApiKeyException
+     */
+    public function delete(array $parameters)
+    {
+        $controller = $this->getResourceName();
+
+        return $this->client->doHttpCall(
+            $controller,
+            self::ACTION_DELETE,
+            $parameters
         );
     }
 
