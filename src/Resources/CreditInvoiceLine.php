@@ -5,11 +5,9 @@ namespace Dokter\WeFact\Resources;
 use Dokter\WeFact\Resources\Actions\MarkAsPaidAction;
 use Dokter\WeFact\Resources\Actions\PartPaymentAction;
 
-class CreditInvoice extends Resource
+class CreditInvoiceLine extends Resource
 {
-    use MarkAsPaidAction, PartPaymentAction;
-
-    public const CONTROLLER_NAME = 'creditinvoice';
+    public const CONTROLLER_NAME = 'creditinvoiceline';
 
     public function getResourceName(): string
     {

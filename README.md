@@ -57,3 +57,28 @@ $invoice = $client->invoices->delete([
     'Identifier' => 1,
  ]);
 ```
+
+Downloading an attachment
+```php
+$invoices = $client->attachments->download([
+    'ReferenceIdentifier' => '1',
+    'Type' => 'pricequote',
+    'Filename' => 'sample.pdf',
+]);
+```
+
+
+### Available controllers
+
+- Attachment
+- Credit invoice
+- Credit invoice lines
+- Debtor
+- Group
+- Invoice
+- Invoice line
+- Price quote
+- Price quote line
+- Product
+- Settings
+- Subscription

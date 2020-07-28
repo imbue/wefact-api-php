@@ -6,13 +6,10 @@ use Dokter\WeFact\Exceptions\ApiException;
 use Dokter\WeFact\Exceptions\MissingApiKeyException;
 use Dokter\WeFact\Resources\Actions\DownloadAction;
 use Dokter\WeFact\Resources\Actions\MarkAsPaidAction;
-use Dokter\WeFact\Resources\Actions\PartPaymentAction;
 
-class Invoice extends Resource
+class InvoiceLine extends Resource
 {
-    use DownloadAction, MarkAsPaidAction, PartPaymentAction;
-
-    public const CONTROLLER_NAME = 'invoice';
+    public const CONTROLLER_NAME = 'invoiceline';
 
     /**
      * @return string
