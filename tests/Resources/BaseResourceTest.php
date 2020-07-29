@@ -2,7 +2,7 @@
 
 namespace Tests\Resources;
 
-use Dokter\WeFact\WeFact;
+use Imbue\WeFact\WeFact;
 use GuzzleHttp\Client;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;

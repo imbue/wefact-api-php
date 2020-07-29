@@ -1,8 +1,8 @@
 <?php
 
-namespace Dokter\WeFact\Resources;
+namespace Imbue\WeFact\Resources;
 
-use Dokter\WeFact\Exceptions\ActionNotAvailableException;
+use Imbue\WeFact\Exceptions\ActionNotAvailableException;
 
 class Settings extends Resource
 {

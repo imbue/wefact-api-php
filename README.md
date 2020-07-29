@@ -1,6 +1,6 @@
 # PHP Library for WeFact
 
-![](https://github.com/patrickdokter/wefact-api-php/workflows/tests/badge.svg)
+![](https://github.com/imbue/wefact-api-php/workflows/tests/badge.svg)
 
 PHP library for online invoicing software [wefact.nl](https://wefact.nl)
 

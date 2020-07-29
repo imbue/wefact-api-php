@@ -1,8 +1,8 @@
 <?php
 
-namespace Dokter\WeFact;
+namespace Imbue\WeFact;
 
-use Dokter\WeFact\Exceptions\ApiException;
+use Imbue\WeFact\Exceptions\ApiException;
 use Psr\Http\Message\ResponseInterface;
 
 class ResponseFactory

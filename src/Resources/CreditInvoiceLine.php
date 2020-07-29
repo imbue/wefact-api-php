@@ -1,9 +1,9 @@
 <?php
 
-namespace Dokter\WeFact\Resources;
+namespace Imbue\WeFact\Resources;
 
-use Dokter\WeFact\Resources\Actions\MarkAsPaidAction;
-use Dokter\WeFact\Resources\Actions\PartPaymentAction;
+use Imbue\WeFact\Resources\Actions\MarkAsPaidAction;
+use Imbue\WeFact\Resources\Actions\PartPaymentAction;
 
 class CreditInvoiceLine extends Resource
 {

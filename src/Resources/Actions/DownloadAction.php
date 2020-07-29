@@ -1,10 +1,10 @@
 <?php
 
-namespace Dokter\WeFact\Resources\Actions;
+namespace Imbue\WeFact\Resources\Actions;
 
-use Dokter\WeFact\Exceptions\ApiException;
-use Dokter\WeFact\Exceptions\MissingApiKeyException;
-use Dokter\WeFact\Resources\Resource;
+use Imbue\WeFact\Exceptions\ApiException;
+use Imbue\WeFact\Exceptions\MissingApiKeyException;
+use Imbue\WeFact\Resources\Resource;
 
 trait DownloadAction
 {

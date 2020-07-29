@@ -1,10 +1,10 @@
 <?php
 
-namespace Dokter\WeFact\Resources;
+namespace Imbue\WeFact\Resources;
 
-use Dokter\WeFact\Exceptions\ActionNotAvailableException;
-use Dokter\WeFact\Exceptions\ApiException;
-use Dokter\WeFact\Exceptions\MissingApiKeyException;
+use Imbue\WeFact\Exceptions\ActionNotAvailableException;
+use Imbue\WeFact\Exceptions\ApiException;
+use Imbue\WeFact\Exceptions\MissingApiKeyException;
 
 class Attachment extends Resource
 {

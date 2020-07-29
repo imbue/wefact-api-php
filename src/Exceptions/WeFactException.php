@@ -1,6 +1,6 @@
 <?php
 
-namespace Dokter\WeFact\Exceptions;
+namespace Imbue\WeFact\Exceptions;
 
 class WeFactException extends \Exception
 {

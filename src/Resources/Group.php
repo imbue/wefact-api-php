@@ -1,6 +1,6 @@
 <?php
 
-namespace Dokter\WeFact\Resources;
+namespace Imbue\WeFact\Resources;
 
 class Group extends Resource
 {

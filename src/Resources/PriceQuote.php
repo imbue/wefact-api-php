@@ -1,8 +1,8 @@
 <?php
 
-namespace Dokter\WeFact\Resources;
+namespace Imbue\WeFact\Resources;
 
-use Dokter\WeFact\Resources\Actions\DownloadAction;
+use Imbue\WeFact\Resources\Actions\DownloadAction;
 
 class PriceQuote extends Resource
 {

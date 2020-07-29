@@ -1,21 +1,21 @@
 <?php
 
-namespace Dokter\WeFact;
+namespace Imbue\WeFact;
 
-use Dokter\WeFact\Exceptions\ApiException;
-use Dokter\WeFact\Exceptions\MissingApiKeyException;
-use Dokter\WeFact\Resources\Attachment;
-use Dokter\WeFact\Resources\CreditInvoice;
-use Dokter\WeFact\Resources\CreditInvoiceLine;
-use Dokter\WeFact\Resources\Debtor;
-use Dokter\WeFact\Resources\Group;
-use Dokter\WeFact\Resources\Invoice;
-use Dokter\WeFact\Resources\InvoiceLine;
-use Dokter\WeFact\Resources\PriceQuote;
-use Dokter\WeFact\Resources\PriceQuoteLine;
-use Dokter\WeFact\Resources\Product;
-use Dokter\WeFact\Resources\Settings;
-use Dokter\WeFact\Resources\Subscription;
+use Imbue\WeFact\Exceptions\ApiException;
+use Imbue\WeFact\Exceptions\MissingApiKeyException;
+use Imbue\WeFact\Resources\Attachment;
+use Imbue\WeFact\Resources\CreditInvoice;
+use Imbue\WeFact\Resources\CreditInvoiceLine;
+use Imbue\WeFact\Resources\Debtor;
+use Imbue\WeFact\Resources\Group;
+use Imbue\WeFact\Resources\Invoice;
+use Imbue\WeFact\Resources\InvoiceLine;
+use Imbue\WeFact\Resources\PriceQuote;
+use Imbue\WeFact\Resources\PriceQuoteLine;
+use Imbue\WeFact\Resources\Product;
+use Imbue\WeFact\Resources\Settings;
+use Imbue\WeFact\Resources\Subscription;
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Exception\GuzzleException;

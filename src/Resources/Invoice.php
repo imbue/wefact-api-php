@@ -1,12 +1,12 @@
 <?php
 
-namespace Dokter\WeFact\Resources;
+namespace Imbue\WeFact\Resources;
 
-use Dokter\WeFact\Exceptions\ApiException;
-use Dokter\WeFact\Exceptions\MissingApiKeyException;
-use Dokter\WeFact\Resources\Actions\DownloadAction;
-use Dokter\WeFact\Resources\Actions\MarkAsPaidAction;
-use Dokter\WeFact\Resources\Actions\PartPaymentAction;
+use Imbue\WeFact\Exceptions\ApiException;
+use Imbue\WeFact\Exceptions\MissingApiKeyException;
+use Imbue\WeFact\Resources\Actions\DownloadAction;
+use Imbue\WeFact\Resources\Actions\MarkAsPaidAction;
+use Imbue\WeFact\Resources\Actions\PartPaymentAction;
 
 class Invoice extends Resource
 {

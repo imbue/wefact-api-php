@@ -1,5 +1,5 @@
 {
-  "name": "dokter/wefact-api-php",
+  "name": "imbue/wefact-api-php",
   "description": "WeFact API client library for PHP.",
   "keywords": [
     "wefact",
@@ -9,11 +9,11 @@
     "invoicing"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/patrickdokter/wefact-api-php",
+  "homepage": "https://github.com/imbue/wefact-api-php",
   "authors": [
     {
-      "name": "Patrick Dokter",
-      "email": "patrick@dokter.dev"
+      "name": "Liam Boer",
+      "email": "liamboer@outlook.com"
     }
   ],
   "require": {
@@ -29,7 +29,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Dokter\\WeFact\\": "src/"
+      "Imbue\\WeFact\\": "src/"
     }
   },
   "autoload-dev": {

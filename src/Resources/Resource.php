@@ -1,10 +1,10 @@
 <?php
 
-namespace Dokter\WeFact\Resources;
+namespace Imbue\WeFact\Resources;
 
-use Dokter\WeFact\Exceptions\ApiException;
-use Dokter\WeFact\Exceptions\MissingApiKeyException;
-use Dokter\WeFact\WeFact;
+use Imbue\WeFact\Exceptions\ApiException;
+use Imbue\WeFact\Exceptions\MissingApiKeyException;
+use Imbue\WeFact\WeFact;
 use GuzzleHttp\Exception\GuzzleException;
 
 abstract class Resource
