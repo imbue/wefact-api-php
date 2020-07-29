@@ -3,6 +3,8 @@
 namespace Imbue\WeFact\Resources;
 
 use Imbue\WeFact\Exceptions\ActionNotAvailableException;
+use Imbue\WeFact\Exceptions\ApiException;
+use Imbue\WeFact\Exceptions\MissingApiKeyException;
 
 class Settings extends Resource
 {
@@ -14,6 +16,96 @@ class Settings extends Resource
     public function getResourceName(): string
     {
         return self::CONTROLLER_NAME;
+    }
+
+    /**
+     * @param array $parameters
+     * @return mixed
+     * @throws ApiException
+     * @throws GuzzleException
+     * @throws MissingApiKeyException
+     */
+    public function costCategoryCreate(array $parameters = [])
+    {
+        $controller = $this->getResourceName();
+
+        return $this->client->doHttpCall(
+            $controller,
+            'costcategory_add',
+            $parameters
+        );
+    }
+
+    /**
+     * @param array $parameters
+     * @return mixed
+     * @throws ApiException
+     * @throws GuzzleException
+     * @throws MissingApiKeyException
+     */
+    public function costCategoryEdit(array $parameters = [])
+    {
+        $controller = $this->getResourceName();
+
+        return $this->client->doHttpCall(
+            $controller,
+            'costcategory_edit',
+            $parameters
+        );
+    }
+
+    /**
+     * @param array $parameters
+     * @return mixed
+     * @throws ApiException
+     * @throws GuzzleException
+     * @throws MissingApiKeyException
+     */
+    public function costCategoryList(array $parameters = [])
+    {
+        $controller = $this->getResourceName();
+
+        return $this->client->doHttpCall(
+            $controller,
+            'costcategory_list',
+            $parameters
+        );
+    }
+
+    /**
+     * @param array $parameters
+     * @return mixed
+     * @throws ApiException
+     * @throws GuzzleException
+     * @throws MissingApiKeyException
+     */
+    public function costCategoryShow(array $parameters = [])
+    {
+        $controller = $this->getResourceName();
+
+        return $this->client->doHttpCall(
+            $controller,
+            'costcategory_show',
+            $parameters
+        );
+    }
+
+    /**
+     * @param array $parameters
+     * @return mixed
+     * @throws ApiException
+     * @throws GuzzleException
+     * @throws MissingApiKeyException
+     */
+    public function costCategoryDelete(array $parameters = [])
+    {
+        $controller = $this->getResourceName();
+
+        return $this->client->doHttpCall(
+            $controller,
+            'costcategory_delete',
+            $parameters
+        );
     }
 
     /**
