@@ -9,11 +9,11 @@ use Imbue\WeFact\Resources\Actions\DownloadAction;
 use Imbue\WeFact\Resources\Actions\MarkAsPaidAction;
 use Imbue\WeFact\Resources\Actions\PartPaymentAction;
 use Imbue\WeFact\Resources\Actions\ScheduleAction;
-use Imbue\WeFact\Resources\Actions\SendByeMailAction;
+use Imbue\WeFact\Resources\Actions\SendByEmailAction;
 
 class Invoice extends Resource
 {
-    use DownloadAction, MarkAsPaidAction, PartPaymentAction, CancelScheduleAction, ScheduleAction, SendByeMailAction;
+    use DownloadAction, MarkAsPaidAction, PartPaymentAction, CancelScheduleAction, ScheduleAction, SendByEmailAction;
 
     public const CONTROLLER_NAME = 'invoice';
 
