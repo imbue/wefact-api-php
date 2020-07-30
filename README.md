@@ -20,7 +20,7 @@ $invoices = $client->invoices->list();
 
 Get a single invoice
 ```php
-$invoices = $client->invoices->show([
+$invoice = $client->invoices->show([
     'InvoiceCode' => 'F0001',
 ]);
 ```
