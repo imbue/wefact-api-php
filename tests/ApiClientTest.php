@@ -17,7 +17,7 @@ class ApiClientTest extends TestCase
     /** @var WeFact */
     private $weFact;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
         $this->guzzleClient = $this->createMock(Client::class);
